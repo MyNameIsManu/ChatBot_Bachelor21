@@ -1,0 +1,258 @@
+[
+  {
+    "text": "Na",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9943801760673523
+    }
+  },
+  {
+    "text": "Servus",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5438005924224854
+    }
+  },
+  {
+    "text": "Gr\u00fc\u00df Gott",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6455522179603577
+    }
+  },
+  {
+    "text": "Auf Wiedersehen",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.4974593222141266
+    }
+  },
+  {
+    "text": "Tsch\u00fcss",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9822310209274292
+    }
+  },
+  {
+    "text": "Bis bald",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.781282901763916
+    }
+  },
+  {
+    "text": "Machs gut",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.37856680154800415
+    }
+  },
+  {
+    "text": "Ade",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.352315753698349
+    }
+  },
+  {
+    "text": "Adieu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.8121596574783325
+    }
+  },
+  {
+    "text": "Ciao",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6792358756065369
+    }
+  },
+  {
+    "text": "Ja",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.4146987199783325
+    }
+  },
+  {
+    "text": "Genau",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5549781322479248
+    }
+  },
+  {
+    "text": "Stimmt",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9134522080421448
+    }
+  },
+  {
+    "text": "Klar",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9799947142601013
+    }
+  },
+  {
+    "text": "Aha",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.5594339370727539
+    }
+  },
+  {
+    "text": "Hm",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9949990510940552
+    }
+  },
+  {
+    "text": "Doch",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7514165639877319
+    }
+  },
+  {
+    "text": "Sicher",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9601356983184814
+    }
+  },
+  {
+    "text": "M\u00f6glich",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9344282746315002
+    }
+  },
+  {
+    "text": "Auf jeden Fall",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.31182417273521423
+    }
+  },
+  {
+    "text": "Nie",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8696284890174866
+    }
+  },
+  {
+    "text": "Nicht",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9995869994163513
+    }
+  },
+  {
+    "text": "Unm\u00f6glich",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6803606748580933
+    }
+  },
+  {
+    "text": "Gut",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.48083609342575073
+    }
+  },
+  {
+    "text": "Wunderbar",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9579485654830933
+    }
+  },
+  {
+    "text": "Ich f\u00fchle mich gut",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9520891308784485
+    }
+  },
+  {
+    "text": "Es geht mir gut",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5690743327140808
+    }
+  },
+  {
+    "text": "Ich bin traurig",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8335705995559692
+    }
+  },
+  {
+    "text": "Ich f\u00fchl mich nicht gut",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9201222658157349
+    }
+  },
+  {
+    "text": "Ungl\u00fccklich",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6087216734886169
+    }
+  },
+  {
+    "text": "Bist du ein Mensch?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.865850567817688
+    }
+  },
+  {
+    "text": "Spreche ich mit einem Menschen?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9249645471572876
+    }
+  }
+]

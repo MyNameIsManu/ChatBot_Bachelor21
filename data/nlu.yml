@@ -1,0 +1,91 @@
+version: "2.0"
+
+nlu:
+
+- intent: search_company
+  examples: |
+    - Ich suche einen Platz bei [Siemens](company)
+    - Finde [Siemens](company) in [Nürnberg](location)
+
+- intent: thanks
+  examples: |
+    - Danke
+    - Dankeschön
+
+- intent: inform
+  examples: |
+    - In [Nürnberg](location)
+    - In der Nähe von [Erlangen](location)
+
+###########################
+
+- intent: greet
+  examples: |
+    - Hey
+    - Hallo
+    - Na
+    - Servus
+    - Grüß Gott
+    - Guten Tag
+    - Guten Abend
+    - Guten Morgen
+    - Moin
+    - Grüß dich
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - Auf Wiedersehen
+    - Tschüss
+    - Bis bald
+    - Machs gut
+    - Ade
+    - Adieu
+    - Ciao
+
+- intent: affirm
+  examples: |
+    - Ja
+    - Yes
+    - Genau
+    - Stimmt
+    - Klar
+    - Aha
+    - Hm
+    - Doch
+    - Bestimmt
+    - Sicher
+    - Möglich
+    - Auf jeden Fall
+
+- intent: deny
+  examples: |
+    - Nein
+    - No
+    - Nie
+    - Nicht
+    - Niemals
+    - Unmöglich
+    - Auf keinen Fall
+
+- intent: mood_great
+  examples: |
+    - Perfekt
+    - Gut
+    - Wunderbar
+    - Ich fühle mich gut
+    - Es geht mir gut
+
+- intent: mood_unhappy
+  examples: |
+    - Mein Tag war schlecht
+    - Ich bin traurig
+    - Ich fühl mich nicht gut
+    - Unglücklich
+
+- intent: bot_challenge
+  examples: |
+    - Bist du ein Bot?
+    - Bist du ein Mensch?
+    - Spreche ich mit einem Bot?
+    - Spreche ich mit einem Menschen?

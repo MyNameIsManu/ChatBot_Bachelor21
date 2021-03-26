@@ -1,0 +1,59 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - search_company
+  - thanks
+  - inform
+
+entities:
+  - company
+  - location
+
+slots:
+  location:
+ ## type: list bool categorical float unfeaturized
+    type: text
+  company: 
+    type: text
+  address: 
+    type: unfeaturized 
+
+## just utter responses
+responses:
+  utter_ask_location:
+  - text: "In welcher Stadt soll ich nach {company} suchen?"
+
+  utter_greet:
+  - text: "Hey! Wie kann ich dir helfen?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+## just action responses + define with python
+actions:
+  - action_company_search
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
