@@ -2,23 +2,6 @@ version: "2.0"
 
 nlu:
 
-- intent: search_company
-  examples: |
-    - Ich suche einen Platz bei [Siemens](company)
-    - Finde [Siemens](company) in [Nürnberg](location)
-
-- intent: thanks
-  examples: |
-    - Danke
-    - Dankeschön
-
-- intent: inform
-  examples: |
-    - In [Nürnberg](location)
-    - In der Nähe von [Erlangen](location)
-
-###########################
-
 - intent: greet
   examples: |
     - Hey
@@ -89,3 +72,18 @@ nlu:
     - Bist du ein Mensch?
     - Spreche ich mit einem Bot?
     - Spreche ich mit einem Menschen?
+
+- intent: search_company
+  examples: |
+    - Ich suche einen Platz bei [Siemens](company)
+    - Finde [Siemens](company) in [Nürnberg](location)
+
+- intent: thanks
+  examples: |
+    - Danke
+    - Dankeschön
+
+- intent: inform
+  examples: |
+    - In [Nürnberg](location)
+    - In der Nähe von [Erlangen](location)
