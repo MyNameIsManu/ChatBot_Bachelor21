@@ -15,16 +15,16 @@ nlu:
     - Moin
     - Grüß dich
 
-- intent: give_name
-  examples: |
-    - Mein Name ist [Name](name)
-    - Ich heiße [Name](name)
-    - Ich bin (name)
+# - intent: give_name
+#   examples: |
+#     - Mein Name ist [Name](name)
+#     - Ich heiße [Name](name)
+#     - Ich bin (name)
 
-- intent: request_names
-  examples: |
-    - Ich möchte dir meinen Namen geben
-    - Weißt du wie ich heiße?
+# - intent: request_names
+#   examples: |
+#     - Ich möchte dir meinen Namen geben
+#     - Weißt du wie ich heiße?
 
 - intent: goodbye
   examples: |
@@ -86,8 +86,8 @@ nlu:
 
 - intent: search_company
   examples: |
-    - Ich suche einen Platz bei [Siemens](company)
-    - Ich suche einen Platz bei [Datev](company)
+    - Ich suche einen Platz bei [Siemens](company:BERLIN)
+    - Ich suche einen Platz bei [Datev](company:NÜRNBERG)
     - Finde Praktikumsplätze bei [Siemens](company) in [Nürnberg](location)
 
 - intent: thanks
@@ -100,6 +100,10 @@ nlu:
   examples: |
     - In [Nürnberg](location)
     - In der Nähe von [Nürnberg](location)
+
+- synonym: Datev
+  examples: |
+    - NÜRNBERG
 
 ## Whenever a user message contains a sequence of 10-12 digits, 
 ## it will be extracted as an location zip_code entity

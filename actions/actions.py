@@ -30,7 +30,7 @@ class ActionCompanySearch(Action):
 
         return [SlotSet("address", address)]
 
-class locationForm(FormAction):
+class LocationForm(FormAction):
     """Custom form action to fill all slots required to find specific type
     of healthcare facilities in a certain city or zip code."""
 
@@ -75,10 +75,10 @@ class locationForm(FormAction):
         buttons = []
         # limit number of results to 3 for clear presentation purposes
         for r in results[:3]:
-            if company == COMPANIES["BERLIN"]["resource"]:
+            if company == COMPANIES["Siemens"]["resource"]:
                 company_id = r.get("id")
                 name = r["name"]
-            elif company == COMPANIES["Berlin Hbf"]["resource"]:
+            elif company == COMPANIES["Datev"]["resource"]:
                 company_id = r["id"]
                 name = r["name"]
             else:

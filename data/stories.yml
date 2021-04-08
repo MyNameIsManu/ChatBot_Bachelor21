@@ -47,10 +47,13 @@ stories:
   - action: utter_ask_location
   - intent: inform
     entities:
-    - location: "Erlangen"
-  - action: action_company_search
-  - slot_was_set:
-      - address: "Gleiwitzer Str. 555, 90475 Nürnberg"
+    - location: "Berlin"
+
+  - action: location_form
+  
+  # - action: action_company_search
+  #- slot_was_set:
+      #- address: "Gleiwitzer Str. 555, 90475 Nürnberg"
   - intent: thanks
   - action: utter_goodbye
 

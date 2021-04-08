@@ -46,7 +46,7 @@ responses:
   - text: "Du bist also {first_name}... Wie kann ich dir helfen?"
 
   utter_ask_location:
-  - text: "In welcher Stadt soll ich nach {company} suchen?"
+  - text: "In welcher Stadt soll ich suchen?"
 
   utter_greet:
   - text: "Hey!"
@@ -82,6 +82,7 @@ responses:
 ## just action responses + define with python
 actions:
   - action_company_search
+  - location_form
   
 
 session_config:
