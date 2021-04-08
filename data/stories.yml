@@ -5,10 +5,28 @@ stories:
   steps:
   - intent: greet           # EXAMPLE for user message with no entities
   - action: utter_greet     # for action that the bot should execute
-  - intent: give_name
-    entities:
-    - name: "Name" 
-  - action: utter_name     
+  
+  ##- intent: request_names
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: first_name
+  - slot_was_set:
+    - first_name: Manu
+  - slot_was_set:
+    - requested_slot: last_name
+  - slot_was_set:
+    - last_name: Mos
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: utter_slots_values
+  
+  ##- intent: give_name
+    ##entities:
+    ##- name: "Name" 
+  ##- action: utter_name     
   - intent: search_company  # for user message with entities
     entities:
     - company: "Siemens"
@@ -35,6 +53,7 @@ stories:
       - address: "Gleiwitzer Str. 555, 90475 Nürnberg"
   - intent: thanks
   - action: utter_goodbye
+
 
 ###########################
 

@@ -21,6 +21,11 @@ nlu:
     - Ich heiße [Name](name)
     - Ich bin (name)
 
+- intent: request_names
+  examples: |
+    - Ich möchte dir meinen Namen geben
+    - Weißt du wie ich heiße?
+
 - intent: goodbye
   examples: |
     - Bye
@@ -95,3 +100,9 @@ nlu:
   examples: |
     - In [Nürnberg](location)
     - In der Nähe von [Nürnberg](location)
+
+## Whenever a user message contains a sequence of 10-12 digits, 
+## it will be extracted as an location zip_code entity
+- regex: location
+  examples: |
+    - \d{5}

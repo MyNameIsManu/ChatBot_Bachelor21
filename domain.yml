@@ -11,12 +11,21 @@ intents:
   - search_company
   - thanks
   - inform
-  - give_name
+  - request_names
+  ##- give_name
 
 entities:
   - company
   - location
-  - name
+  - first_name
+  - last_name
+
+forms:
+  name_form:
+    first_name:
+      - type: from_text
+    last_name:
+      - type: from_text
 
 slots:
   location:
@@ -26,19 +35,21 @@ slots:
     type: text
   address: 
     type: unfeaturized 
-  name:
+  first_name:
+    type: text
+  last_name:
     type: text
 
 ## just pre-coded responses
 responses:
   utter_name:
-  - text: "Du bist also {name}... Wie kann ich dir helfen?"
+  - text: "Du bist also {first_name}... Wie kann ich dir helfen?"
 
   utter_ask_location:
   - text: "In welcher Stadt soll ich nach {company} suchen?"
 
   utter_greet:
-  - text: "Hey! Wie heißt du?"
+  - text: "Hey!"
 
   utter_cheer_up:
   - text: "Hilft dir das, dich besser zu fühlen?:"
@@ -55,6 +66,18 @@ responses:
 
   utter_iamabot:
   - text: "Ich bin ein Bot, powered by Rasa."
+
+  utter_ask_first_name:
+  - text: "Wie ist dein Vorname?"
+
+  utter_ask_last_name:
+  - text: "Oh, wirklich? Wie ist dein Nachname?"
+
+  utter_submit:
+  - text: "Ah, ok. Danke!"
+
+  utter_slots_values:
+  - text: "Ich werde dich von jetzt an {first_name} {last_name} nennen."
 
 ## just action responses + define with python
 actions:
