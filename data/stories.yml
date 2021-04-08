@@ -3,9 +3,9 @@ version: "2.0"
 stories:
 - story: search company happy path  # name of the story - just for debugging
   steps:
-  - intent: greet           # user message with no entities
-  - action: utter_greet     # action that the bot should execute
-  - intent: search_company  # user message with entities
+  - intent: greet           # EXAMPLE for user message with no entities
+  - action: utter_greet     # for action that the bot should execute
+  - intent: search_company  # for user message with entities
     entities:
     - company: "Siemens"
     - location: "Erlangen"  

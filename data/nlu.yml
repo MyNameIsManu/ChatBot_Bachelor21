@@ -76,14 +76,15 @@ nlu:
 - intent: search_company
   examples: |
     - Ich suche einen Platz bei [Siemens](company)
-    - Finde [Siemens](company) in [Nürnberg](location)
+    - Finde Praktikumsplätze bei [Siemens](company) in [Nürnberg](location)
 
 - intent: thanks
   examples: |
     - Danke
     - Dankeschön
+    - Vielen Dank
 
 - intent: inform
   examples: |
     - In [Nürnberg](location)
-    - In der Nähe von [Erlangen](location)
+    - In der Nähe von [Nürnberg](location)

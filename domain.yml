@@ -18,14 +18,14 @@ entities:
 
 slots:
   location:
- ## type: list bool categorical float unfeaturized
+ ## types: list bool categorical float unfeaturized
     type: text
   company: 
     type: text
   address: 
     type: unfeaturized 
 
-## just utter responses
+## just pre-coded responses
 responses:
   utter_ask_location:
   - text: "In welcher Stadt soll ich nach {company} suchen?"
@@ -34,20 +34,20 @@ responses:
   - text: "Hey! Wie kann ich dir helfen?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Hilft dir das, dich besser zu fühlen?:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Hat dir das geholfen?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Danke, fahre fort!"
 
   utter_goodbye:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Ich bin ein Bot, powered by Rasa."
 
 ## just action responses + define with python
 actions:
