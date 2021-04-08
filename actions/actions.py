@@ -25,6 +25,6 @@ class ActionCompanySearch(Action):
         
         company = tracker.get_slot("company")
         address = "Gleiwitzer Str. 555, 90475 Nürnberg"
-        dispatcher.utter_message(text="Die Adresse von {}:{}".format(company, address))
+        dispatcher.utter_message(text="Die Adresse von {}: {}".format(company, address))
 
         return [SlotSet("address", address)]

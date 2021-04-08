@@ -5,6 +5,10 @@ stories:
   steps:
   - intent: greet           # EXAMPLE for user message with no entities
   - action: utter_greet     # for action that the bot should execute
+  - intent: give_name
+    entities:
+    - name: "Name" 
+  - action: utter_name     
   - intent: search_company  # for user message with entities
     entities:
     - company: "Siemens"
@@ -27,6 +31,8 @@ stories:
     entities:
     - location: "Erlangen"
   - action: action_company_search
+  - slot_was_set:
+      - address: "Gleiwitzer Str. 555, 90475 Nürnberg"
   - intent: thanks
   - action: utter_goodbye
 

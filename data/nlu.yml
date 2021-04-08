@@ -15,6 +15,12 @@ nlu:
     - Moin
     - Grüß dich
 
+- intent: give_name
+  examples: |
+    - Mein Name ist [Name](name)
+    - Ich heiße [Name](name)
+    - Ich bin (name)
+
 - intent: goodbye
   examples: |
     - Bye
@@ -76,6 +82,7 @@ nlu:
 - intent: search_company
   examples: |
     - Ich suche einen Platz bei [Siemens](company)
+    - Ich suche einen Platz bei [Datev](company)
     - Finde Praktikumsplätze bei [Siemens](company) in [Nürnberg](location)
 
 - intent: thanks
